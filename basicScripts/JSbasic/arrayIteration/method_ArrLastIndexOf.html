@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.lastIndexOf()</h2>
+
+
+<p id="demo"></p>
+
+<script>
+    var fruits = ["Apple", "Orange", "Apple", "Mango"];
+    var a = fruits.lastIndexOf("Apple");
+    document.getElementById("demo").innerHTML = "Apple is found in position " + (a + 1);
+</script>
+
+<p>The lastIndexOf() does not work in Internet Explorer 8 and earlier versions.</p>
+
+</body>
+</html>
+
+
+<!--Array.lastIndexOf() is the same as Array.indexOf(), but returns the position of the last occurrence of the specified element.-->
+<!--Syntax-->
+<!--array.lastIndexOf(item, start)-->
+<!--item	Required. The item to search for-->
+<!--start	Optional. Where to start the search. Negative values will start at the given position counting from the end, and search to the beginning-->

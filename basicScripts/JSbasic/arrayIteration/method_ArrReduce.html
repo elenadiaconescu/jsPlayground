@@ -1,0 +1,84 @@
+<!--The reduce() method runs a function on each array element to produce (reduce it to) a single value.-->
+<!--The reduce() method works from left-to-right in the array. See also reduceRight().-->
+<!--The reduce() method does not reduce the original array.-->
+<!--This example finds the sum of all numbers in an array:-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.reduce()</h2>
+
+<p>This example finds the sum of all numbers in an array:</p>
+
+<p id="demo"></p>
+
+<script>
+    var numbers = [45, 4, 9, 16, 25];
+    var sum = numbers.reduce(myFunction);
+
+    document.getElementById("demo").innerHTML = "The sum is " + sum;
+
+    function myFunction(total, value, index, array) {
+        return total + value;
+    }
+</script>
+
+</body>
+</html>
+
+<!--Note that the function takes 4 arguments:-->
+<!---->
+<!--The total (the initial value / previously returned value)-->
+<!--The item value-->
+<!--The item index-->
+<!--The array itself-->
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<body>-->
+
+<!--<h2>JavaScript Array.reduce()</h2>-->
+
+<!--<p>This example finds the sum of all numbers in an array:</p>-->
+
+<!--<p id="demo"></p>-->
+
+<!--<script>-->
+<!--    var numbers = [45, 4, 9, 16, 25];-->
+<!--    var sum = numbers.reduce(myFunction);-->
+
+<!--    document.getElementById("demo").innerHTML = "The sum is " + sum;-->
+
+<!--    function myFunction(total, value) {-->
+<!--        return total + value;-->
+<!--    }-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<body>-->
+
+<!--<h2>JavaScript Array.reduce()</h2>-->
+
+<!--<p>This example finds the sum of all numbers in an array:</p>-->
+
+<!--<p id="demo"></p>-->
+
+<!--<script>-->
+<!--    var numbers = [45, 4, 9, 16, 25];-->
+<!--    var sum = numbers.reduce(myFunction, 100);-->
+
+<!--    document.getElementById("demo").innerHTML = "The sum is " + sum;-->
+
+<!--    function myFunction(total, value) {-->
+<!--        return total + value;-->
+<!--    }-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->

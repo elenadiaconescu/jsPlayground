@@ -1,0 +1,39 @@
+<!--slice() extracts a part of a string and returns the extracted part in a new string.-->
+<!--The method takes 2 parameters: the start position, and the end position (end not included).-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The slice() method extract a part of a string
+    and returns the extracted parts in a new string:</p>
+
+<p id="demo"></p>
+
+<script>
+    var str = "Apple, Banana, Kiwi";
+    var res = str.slice(7,13);
+    document.getElementById("demo").innerHTML = res;
+</script>
+
+</body>
+</html>
+
+
+<!--This example slices out a portion of a string from position 7 to position 12 (13-1)-->
+
+<!--If a parameter is negative, the position is counted from the end of the string.-->
+<!--This example slices out a portion of a string from position -12 to position -6:-->
+<!--var str = "Apple, Banana, Kiwi";-->
+<!--var res = str.slice(-12, -6);-->
+
+
+<!--If you omit the second parameter, the method will slice out the rest of the string:-->
+<!--Example-->
+<!--var res = str.slice(7);-->
+
+<!--or, counting from the end:-->
+<!--Example-->
+<!--var res = str.slice(-12);-->

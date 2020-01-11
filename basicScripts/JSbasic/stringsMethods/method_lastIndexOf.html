@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+
+<p id="demo"></p>
+
+<script>
+    var str = "Please locate where 'locate' occurs!";
+    var pos = str.lastIndexOf("locate");
+    document.getElementById("demo").innerHTML = pos;
+</script>
+
+</body>
+</html>
+
+
+<!--Both methods accept a second parameter as the starting position for the search-->
+<!--The lastIndexOf() methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.-->

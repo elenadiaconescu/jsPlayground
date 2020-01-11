@@ -1,0 +1,32 @@
+<!--As you have seen in the previous examples, JavaScript functions are defined with the function keyword.-->
+<!--Functions can also be defined with a built-in JavaScript function constructor called Function().-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>JavaScript has an built-in function constructor.</p>
+<p id="demo"></p>
+
+<script>
+    var myFunction = new Function("a", "b", "return a * b");
+    document.getElementById("demo").innerHTML = myFunction(4, 3);
+</script>
+
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<body>-->
+
+<!--<p id="demo"></p>-->
+
+<!--<script>-->
+<!--    var myFunction = function (a, b) {return a * b}-->
+<!--    document.getElementById("demo").innerHTML = myFunction(4, 3);-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->

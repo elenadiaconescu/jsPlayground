@@ -1,0 +1,24 @@
+<!--In JavaScript null is "nothing". -->
+<!--It is supposed to be something that doesn't exist.-->
+<!--Unfortunately, in JavaScript, the data type of null is an object.-->
+<!--You can consider it a bug in JavaScript that typeof null is an object. It should be null.-->
+<!--You can empty an object by setting it to null-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript</h2>
+
+<p>Objects can be emptied by setting the value to <b>null</b>.</p>
+
+<p id="demo"></p>
+
+<script>
+    var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+    person = null;
+    document.getElementById("demo").innerHTML = typeof person;
+</script>
+
+</body>
+</html>

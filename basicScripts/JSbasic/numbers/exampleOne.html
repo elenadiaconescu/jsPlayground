@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Numbers can be written with or without decimals:</p>
+
+<p id="demo"></p>
+
+<script>
+    var x = 3.14;
+    var y = 3;
+    var z = 123e5;    // 12300000
+    var t = 123e-5;
+    document.getElementById("demo").innerHTML = x + "<br>" + y + z + "<br>" + t;
+</script>
+
+</body>
+</html>
+
+
+<!--JavaScript Numbers are Always 64-bit Floating Point-->
+<!--Unlike many other programming languages, JavaScript does not define different types of numbers, like integers, short, long, floating-point etc.-->
+<!--JavaScript numbers are always stored as double precision floating point numbers, following the international IEEE 754 standard.-->
+<!--This format stores numbers in 64 bits, where the number (the fraction) is stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign in bit 63-->
