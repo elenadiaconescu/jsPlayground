@@ -1,0 +1,60 @@
+<!--In Pass by Reference, Function is called by directly passing the reference/address of the variable as the argument.
+ Changing the argument inside the function affect the variable passed from outside the function.
+ In Javascript objects and arrays follows pass by reference.-->
+<html>
+<body>
+
+<h2>JavaScript Objects </h2>
+
+<p>Changing the argument inside the function affect the variable passed from outside the function</p>
+
+<p id="demo"></p>
+
+<!--<script>-->
+
+<!--    // your code goes here-->
+
+<!--    function callByReference(varObj) {-->
+<!--        console.log("Inside Call by Reference Method");-->
+<!--        varObj.a = 100;-->
+<!--        console.log(varObj);-->
+<!--    }-->
+
+<!--    let varObj = {a: 1};-->
+<!--    console.log("Before Call by Reference Method");-->
+<!--    console.log(varObj);-->
+
+<!--    callByReference(varObj)-->
+<!--    console.log("After Call by Reference Method");-->
+<!--    console.log(varObj);-->
+
+<!--    document.getElementById("demo").innerHTML = varObj;-->
+<!--</script>-->
+
+<script>
+
+    let person = {
+        name: 'John',
+        age: 32,
+        partTime: false
+    };
+
+    function incremenetAge(p) {
+        p.age++;
+    }
+
+    function showMessage(message) {
+        document.getElementById('demo').textContent = message;
+    }
+
+    incremenetAge(person);
+    showMessage(person.age);
+
+    // when we pass obj we are able to modify properties and methods
+
+</script>
+
+</body>
+</html>
+
+<!--https://medium.com/nodesimplified/javascript-pass-by-value-and-pass-by-reference-in-javascript-fcf10305aa9c-->

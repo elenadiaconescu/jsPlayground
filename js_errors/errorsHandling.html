@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Handling Error</h2>
+
+<p>Create a variable, assign a value to it, and display it:</p>
+
+<p id="demo"></p>
+
+<script>
+    let car = 'skoda';
+    try {
+        let car = newCar;
+    }
+    catch(error) {
+        console.log('error: ', error);
+    }
+    finally {
+        console.log('always executes');
+    }
+    console.log('continuing...');
+
+    document.getElementById("demo").innerHTML = car;
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Creating a JavaScript Object.</p>
+
+<p id="demo"></p>
+
+<script>
+    // methods are functions that can be attached to objects
+
+    let person = {
+        name: "John",
+        age: 50,
+        partTime: false,
+        showInfo: function (realAge) {
+            document.getElementById("demo").innerHTML = this.name + ' is ' + realAge;
+        }
+    };
+
+    person.showInfo(23);
+
+
+</script>
+
+</body>
+</html>
+
+

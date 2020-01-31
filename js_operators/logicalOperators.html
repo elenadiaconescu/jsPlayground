@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Logical Operators</h2>
+
+<p> Interact with variables using Logical Operators &&, ||, !, &, |</p>
+
+<p id="resultAnd">abc</p>
+<p id="resultOr"></p>
+<p id="resultNegation"></p>
+
+<script>
+
+    // your code goes here
+    const a = 3;
+    const b = -2;
+
+    const c = a > 0 && b > 0;
+    // expected output: false
+
+    const d = a > 0 || b > 0;
+    // expected output: true
+
+    const result = !(a > 0 || b > 0);
+    // expected output: false
+
+    document.getElementById("resultAnd").innerHTML = c;
+    document.getElementById("resultOr").innerHTML = d;
+    document.getElementById("resultNegation").innerHTML = result;
+</script>
+
+</body>
+</html>
+
+<!--JavaScript Logical Operators-->
+<!--Operator	Description-->
+<!--&&	        logical and-->
+<!--||	        logical or-->
+<!--!	        logical not-->
+<!--|           or-->
+<!--&           and-->

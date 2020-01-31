@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>JavaScript Functions takes in argument, an object </p>
+
+<p id="demo"></p>
+
+<script>
+
+    // your code goes here
+    // passing infor to function through parameters
+    function Book(type, author) {
+        this.type = type;
+        this.author = author;
+        this.getDetails = function () {
+            return this.type + " written by " + this.author;
+        }
+    }
+
+    var book = new Book("The Lord of the Rings", "J. R. R. Tolkien");
+    alert(book.getDetails());
+
+</script>
+
+</body>
+</html>

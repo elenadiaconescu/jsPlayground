@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<h2>JavaScript Getters</h2>
+
+<p>Getters and setters allow you to get and set properties via methods.</p>
+<p>This example uses a lang property to get the value of the language property.</p>
+<p>Getters and setters allow you to define Object Accessors (Computed Properties).</p>
+
+<script>
+    // Create an object:
+    var person = {
+        firstName: "John",
+        lastName: "Doe",
+        language: "en",
+        get lang() {
+            return this.language;
+        }
+    };
+    // Display data from the object using a getter:
+    document.getElementById("demo").innerHTML = person.lang;
+</script>
+
+<!--<h2>JavaScript Setters</h2>-->
+
+<!--<p>Getters and setters allow you to get and set properties via methods.</p>-->
+<!--<p>This example uses a lang property to set the value of the language property.</p>-->
+
+<!--<script>-->
+<!--    // Create an object:-->
+<!--    var person = {-->
+<!--        firstName: "John",-->
+<!--        lastName : "Doe",-->
+<!--        language : "ro",-->
+<!--        set lang(value) {-->
+<!--            this.language = value;-->
+<!--        }-->
+<!--    };-->
+<!--    // Set a property using set:-->
+<!--    person.lang = "en";-->
+<!--    // Display data from the object:-->
+<!--    document.getElementById("demo").innerHTML = person.language;-->
+<!--</script>-->
+
+<!--another example-->
+<!--<script>-->
+<!--    var person = {-->
+<!--        firstName: "John",-->
+<!--        lastName: "Doe",-->
+<!--        language: "ro",-->
+<!--        set lang(value) {-->
+<!--            this.language = value;-->
+<!--        }-->
+<!--    };-->
+
+<!--    console.log(person.firstName);-->
+<!--    if (person.hasOwnProperty("firstName")) {-->
+<!--        console.log(person.firstName);-->
+<!--    }-->
+<!--    document.getElementById("demo").innerHTML = person.firstName;-->
+<!--</script>-->
+
+
+</body>
+</html>
+
+
+<!--https://www.w3schools.com/js/js_objects.asp-->

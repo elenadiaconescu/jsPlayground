@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript var vs const vs let</h2>
+
+<p>Create a variable, assign a value to it, and display it:</p>
+
+<p id="demo"></p>
+
+<script>
+
+    // ~~~ var ~~~
+    var carName = "Volvo"; // declaration and initialization
+    var carName = "Skoda"; // re-declare OK
+
+    // var carName = "Volvo";
+    // carName = "Skoda"; // update OK
+
+    // ~~~ let ~~~
+    // let carName = "Volvo"; // declaration and initialization
+    // let carName = "Skoda"; // re-declare - NOT working
+
+    // let carName = "Volvo";
+    // carName = "Skoda"; // update  OK
+
+    // ~~~ const ~~~
+    // const carName = "Volvo";
+    // const carName = "Skoda"; // re-declare - NOT working
+
+    // const carName = "Volvo";
+    // carName = "Skoda"; // update - NOT working
+
+    document.getElementById("demo").innerHTML = carName;
+
+</script>
+
+</body>
+</html>

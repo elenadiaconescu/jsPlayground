@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<p>Anoymous function is a method without name </p>
+
+<script>
+    let key = 10;
+
+    // your code goes here
+    function getSecretCode(value) {
+
+        let keyGenerator = function () {
+            let key = 12;
+            console.log('in keyGenerator: ', key); // 12
+            return key;
+        }
+
+
+        console.log(' in getSecretCode: ', key); // 10
+        let code = value * keyGenerator();
+
+        return code;
+    }
+
+    console.log(' outside ', getSecretCode(10));
+
+    // function name() {}
+    // let fn = feunction() {}
+    // myFunction(a,b,c)
+    // return value
+
+</script>
+
+</body>
+</html>
+
+
+
+

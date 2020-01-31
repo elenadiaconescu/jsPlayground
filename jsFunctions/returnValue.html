@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Functions can be used in expressions.</p>
+<p id="demo"></p>
+
+<!--<script>-->
+<!--    function myFunction(a, b) {-->
+<!--        return a * b;-->
+<!--    }-->
+
+<!--    var x = myFunction(4, 3) * 2;-->
+<!--    document.getElementById("demo").innerHTML = x;-->
+<!--</script>-->
+
+<script>
+    function getSecretCode(value) {
+        let code = value * 11;
+        return code; // if no return then undefined
+
+    }
+
+    console.log(getSecretCode(2));
+    document.getElementById("demo").innerHTML = getSecretCode(2);
+
+</script>
+
+
+</body>
+</html>

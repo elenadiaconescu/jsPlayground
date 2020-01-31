@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!--<h2>JavaScript Arrow Function</h2>-->
+<!--<p>This example shows an Arrow Function without the brackets or the return keyword.</p>-->
+<!--<p id="demo"></p>-->
+
+<!--<script>-->
+
+<!--    // your code goes here-->
+<!--    var hello;-->
+<!--    hello = () => "Hello World!";-->
+<!--    document.getElementById("demo").innerHTML = hello();-->
+
+<!--</script>-->
+
+
+<h2>JavaScript "this"</h2>
+
+<p>This example demonstrate that in Arrow Functions, the "this" keyword represents the object that owns the function,
+    no matter who calls the function.</p>
+<p>Click the button to execute the "hello" function again, and you will see that "this" still represents the window
+    object.</p>
+
+<button id="btn">Click Me!</button>
+<p id="demo"></p>
+
+<script>
+    var hello;
+
+    hello = () => {
+        document.getElementById("demo").innerHTML += this;
+    }
+
+    //The window object calls the function:
+    window.addEventListener("load", hello);
+
+    //A button object calls the function:
+    document.getElementById("btn").addEventListener("click", hello);
+</script>
+
+
+</body>
+</html>

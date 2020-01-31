@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<p>Anoymous function is a method without name </p>
+
+<button id="btn">I want oranges</button>
+<p id="demo"></p>
+
+<div id="review" class="container d-none">
+    <h4>Review orange.. </h4>
+    <p>Review mandarine.. </p>
+</div>
+
+<script>
+
+    const button = document.getElementById('btn');
+
+
+    button.addEventListener('click', function () {
+        // alert("There you go some oranges!");
+        const review = document.getElementById('review');
+
+        if (review.classList.contains('d-none')) {
+            review.classList.remove('d-none');
+            button.textContent = "close review";
+        } else {
+            review.classList.add("d-none");
+            button.textContent = "see review";
+        }
+        review.classList.remove('d-none');
+
+    });
+
+</script>
+
+</body>
+</html>
+
+
+
+

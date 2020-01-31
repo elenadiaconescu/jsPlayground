@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Handling Error</h2>
+
+<p>Create a variable, assign a value to it, and display it:</p>
+
+<p id="demo"></p>
+
+<script>
+    //creating a promise - a value that we don't have value access yet
+    let promise = new Promise(
+        function (resolve, reject) {
+            setTimeout(resolve, 100, 'someValue');
+        }
+    );
+
+    promise.then(
+        value => console.log('fulfilled: ' + value),
+        error => console.log('rejected' + error)
+    )
+
+</script>
+
+</body>
+</html>
